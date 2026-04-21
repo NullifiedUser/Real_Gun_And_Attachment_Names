@@ -4,7 +4,7 @@ id="Real-Gun-&-Attachment-Names"
 version="1.0.5"
 
 [autoload]
-RGAAN="res://mods/Real_Gun_And_Attachment_Names/Main.gd"
+RGAAN="res://mods/RealGunAttachmentNames/Main.gd"
 
 [updates]
 modworkshop=55936

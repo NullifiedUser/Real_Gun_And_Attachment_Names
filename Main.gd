@@ -1,8 +1,8 @@
 extends Node
 
-const WEAPON_RES = "res://mods/Real_Gun_And_Attachment_Names/Resources/weapon_resources.gd"
-const ATTACH_RES = "res://mods/Real_Gun_And_Attachment_Names/Resources/attachment_resources.gd"
-const ATTACH_REP_NAMES = "res://mods/Real_Gun_And_Attachment_Names/Resources/repair_names_resources.gd"
+const WEAPON_RES = "res://mods/RealGunAttachmentNames/Resources/weapon_resources.gd"
+const ATTACH_RES = "res://mods/RealGunAttachmentNames/Resources/attachment_resources.gd"
+const ATTACH_REP_NAMES = "res://mods/RealGunAttachmentNames/Resources/repair_names_resources.gd"
 
 func _ready():
     apply_list(WEAPON_RES)
