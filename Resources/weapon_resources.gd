@@ -138,3 +138,4 @@ var list := [
         "rename_mag": "VSS Magazine"
     }
 ]
+

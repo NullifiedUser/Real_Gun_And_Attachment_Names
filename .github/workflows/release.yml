@@ -41,20 +41,20 @@ jobs:
       - name: Build VMZ
         run: |
           mkdir -p build
-          # mod.txt at root, everything else in mods/RealGunAttachmentNames/
+          # mod.txt at root, everything else in RealGunAndAttachmentNames/
           cp mod.txt build/mod.txt
-          mkdir -p build/mods/RealGunAttachmentNames
-          cp Main.gd build/mods/RealGunAttachmentNames/
-          cp -r Resources build/mods/RealGunAttachmentNames/
+          mkdir -p build/RealGunAndAttachmentNames
+          cp Main.gd build/RealGunAndAttachmentNames/
+          cp -r Resources build/RealGunAndAttachmentNames/
           cd build
-          zip -r ../RealGunAttachmentNames.vmz mod.txt mods/RealGunAttachmentNames/
+          zip -r ../RealGunAndAttachmentNames.vmz mod.txt RealGunAndAttachmentNames/
 
       - name: Create versioned release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v${{ steps.version.outputs.version }}
           name: Real Gun & Attachment Names v${{ steps.version.outputs.version }}
-          files: RealGunAttachmentNames.vmz
+          files: RealGunAndAttachmentNames.vmz
           generate_release_notes: true
 
       - name: Delete existing latest release
@@ -67,6 +67,6 @@ jobs:
         with:
           tag_name: latest
           name: Real Gun & Attachment Names (Latest)
-          files: RealGunAttachmentNames.vmz
+          files: RealGunAndAttachmentNames.vmz
           body: "Latest build - v${{ steps.version.outputs.version }}"
           make_latest: true

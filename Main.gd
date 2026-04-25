@@ -1,54 +1,49 @@
 extends Node
 
-const WEAPON_RES = "res://mods/RealGunAttachmentNames/Resources/weapon_resources.gd"
-const ATTACH_RES = "res://mods/RealGunAttachmentNames/Resources/attachment_resources.gd"
-const ATTACH_REP_NAMES = "res://mods/RealGunAttachmentNames/Resources/repair_names_resources.gd"
+const WEAPON_RES = "res://RealGunAndAttachmentNames/Resources/weapon_resources.gd"
+const ATTACH_RES = "res://RealGunAndAttachmentNames/Resources/attachment_resources.gd"
+const ATTACH_REP_NAMES = "res://RealGunAndAttachmentNames/Resources/repair_names_resources.gd"
+
+var _lib = null
 
 func _ready():
+    if Engine.has_meta("RTVModLib"):
+        var lib = Engine.get_meta("RTVModLib")
+        if lib._is_ready:
+            _on_lib_ready()
+        else:
+            lib.frameworks_ready.connect(_on_lib_ready)
+
+func _on_lib_ready():
+    _lib = Engine.get_meta("RTVModLib")
     apply_list(WEAPON_RES)
     apply_list(ATTACH_RES)
     apply_list(ATTACH_REP_NAMES)
-
-    for i in range(20):
-        await get_tree().process_frame
-    apply_list(ATTACH_REP_NAMES)
+    print("Real Gun & Attachment Names: Loaded")
 
 func apply_list(path: String):
     var script = ResourceLoader.load(path, "", ResourceLoader.CACHE_MODE_IGNORE)
     if script is Script:
         script = script.new()
 
-    var list_data = script.list
+    for entry in script.list:
+        var res_path: String = entry["path"]
 
-    for entry in list_data:
         if entry.has("rename"):
-            rename(entry["path"], entry["rename"])
+            var new_name: String = entry["rename"]
+            _lib.patch(_lib.Registry.RESOURCES, res_path, {
+                "name": new_name,
+                "inventory": new_name,
+                "rotated": new_name,
+                "equipment": new_name,
+                "display": new_name
+            })
+
         if entry.has("rename_mag"):
-            rename_mag(entry["path"], entry["rename_mag"])
-        if entry.has("hover"):
-            rename_hover(entry["path"], entry["hover"])
+            _lib.patch(_lib.Registry.RESOURCES, res_path, {"name": entry["rename_mag"]})
 
+        if entry.has("rename_hover"):
+            _lib.patch(_lib.Registry.RESOURCES, res_path, {"name": entry["rename_hover"]})
 
-func rename(path: String, new_name: String):
-    var r = load(path)
-    if r:
-        r.name = new_name
-        r.inventory = new_name
-        r.rotated = new_name
-        r.equipment = new_name
-        r.display = new_name
-
-func rename_mag(path: String, new_name: String):
-    var r = load(path)
-    if r:
-        r.name = new_name
-
-func rename_hover(path: String, new_name):
-    var r = load(path)
-    if r:
-        r.name = new_name
-
-func repair(path: String, new_name):
-    var r = load(path)
-    if r:
-        r.name = new_name
+        if entry.has("rename_repair"):
+            _lib.patch(_lib.Registry.RESOURCES, res_path, {"name": entry["rename_repair"]})

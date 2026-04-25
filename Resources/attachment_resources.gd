@@ -12,12 +12,12 @@ var list := [
     {
         "path": "res://Items/Attachments/EXPS/EXPS.tres",
         "rename": "EXPS",
-        "hover": "Eotech EXPS"
+        "rename_hover": "Eotech EXPS"
     },
     {
         "path": "res://Items/Attachments/HMR/HMR.tres",
         "rename": "HAMR",
-        "hover": "Leupold Mark 4 HAMR"
+        "rename_hover": "Leupold Mark 4 HAMR"
     },
     {
         "path": "res://Items/Attachments/Hybrid/Hybrid.tres",
@@ -42,7 +42,7 @@ var list := [
     {
         "path": "res://Items/Attachments/MRO/MRO.tres",
         "rename": "MRO",
-        "hover": "Trijicon MRO"
+        "rename_hover": "Trijicon MRO"
     },
     {
         "path": "res://Items/Attachments/Navy/Navy.tres",
@@ -79,7 +79,7 @@ var list := [
     {
         "path": "res://Items/Attachments/RMR/RMR.tres",
         "rename": "RMR",
-        "hover": "Trijicon RMR"
+        "rename_hover": "Trijicon RMR"
     },
     {
         "path": "res://Items/Attachments/Salvo/Salvo.tres",
@@ -92,7 +92,7 @@ var list := [
     {
         "path": "res://Items/Attachments/SRO/SRO.tres",
         "rename": "SRO",
-        "hover": "Trijicon SRO"
+        "rename_hover": "Trijicon SRO"
     },
     {
         "path": "res://Items/Attachments/Thor/Thor.tres",
@@ -103,3 +103,4 @@ var list := [
         "rename": "Eotech Vudu"
     }
 ]
+

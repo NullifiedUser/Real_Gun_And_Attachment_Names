@@ -1,10 +1,12 @@
 [mod]
 name="Real Gun & Attachment Names"
 id="Real-Gun-&-Attachment-Names"
-version="1.0.5"
+version="1.0.6"
 
 [autoload]
-RGAAN="res://mods/RealGunAttachmentNames/Main.gd"
+RGAAN="res://RealGunAndAttachmentNames/Main.gd"
+
+[registry]
 
 [updates]
 modworkshop=55936
