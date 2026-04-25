@@ -1,7 +1,7 @@
 [mod]
 name="Real Gun & Attachment Names"
 id="Real-Gun-&-Attachment-Names"
-version="1.0.6"
+version="1.0.7"
 
 [autoload]
 RGAAN="res://RealGunAndAttachmentNames/Main.gd"
