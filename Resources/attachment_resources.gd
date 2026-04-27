@@ -12,7 +12,7 @@ var list := [
     {
         "path": "res://Items/Attachments/EXPS/EXPS.tres",
         "rename": "EXPS",
-        "rename_hover": "EOTech EXPS"
+        "rename_hover": "Eotech EXPS"
     },
     {
         "path": "res://Items/Attachments/HMR/HMR.tres",
@@ -102,7 +102,7 @@ var list := [
     },
     {
         "path": "res://Items/Attachments/Vudu/Vudu.tres",
-        "rename": "EOTech Vudu",
+        "rename": "Eotech Vudu",
         "rename_rotated": "Vudu"
     }
 ]
