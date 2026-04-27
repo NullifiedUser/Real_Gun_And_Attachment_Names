@@ -12,12 +12,13 @@ var list := [
     {
         "path": "res://Items/Attachments/EXPS/EXPS.tres",
         "rename": "EXPS",
-        "rename_hover": "Eotech EXPS"
+        "rename_hover": "EOTech EXPS"
     },
     {
         "path": "res://Items/Attachments/HMR/HMR.tres",
-        "rename": "HAMR",
-        "rename_hover": "Leupold Mark 4 HAMR"
+        "rename": "Leupold HAMR",
+        "rename_hover": "Leupold Mark 4 HAMR",
+        "rename_rotated": "HAMR"
     },
     {
         "path": "res://Items/Attachments/Hybrid/Hybrid.tres",
@@ -29,7 +30,8 @@ var list := [
     },
     {
         "path": "res://Items/Attachments/Leopard/Leopard.tres",
-        "rename": "Leopard"
+        "rename": "Leupold Mark 8 CQBSS",
+        "rename_rotated": "Leupold"
     },
     {
         "path": "res://Items/Attachments/Micro/Micro.tres",
@@ -100,7 +102,7 @@ var list := [
     },
     {
         "path": "res://Items/Attachments/Vudu/Vudu.tres",
-        "rename": "Eotech Vudu"
+        "rename": "EOTech Vudu",
+        "rename_rotated": "Vudu"
     }
 ]
-

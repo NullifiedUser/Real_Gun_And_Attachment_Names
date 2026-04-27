@@ -47,3 +47,6 @@ func apply_list(path: String):
 
         if entry.has("rename_repair"):
             _lib.patch(_lib.Registry.RESOURCES, res_path, {"name": entry["rename_repair"]})
+
+        if entry.has("rename_rotated"):
+            _lib.patch(_lib.Registry.RESOURCES, res_path, {"rotated": entry["rename_rotated"]})
