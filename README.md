@@ -1,8 +1,8 @@
 **Changes Weapon & Attachment Names to be real world names.**
 
------
+**Mod works on versions 0.1.0.0 > 0.1.1.3+**
 
-If I missed something or you’d like to suggest improvements, message me here or on the Vostok Discord (username is the same).
+**Metro Mod Loader 3.1.0+ Is Required**
 
 -----
 
@@ -11,8 +11,6 @@ If I missed something or you’d like to suggest improvements, message me here o
 [Google Sheet](https://docs.google.com/spreadsheets/d/1ZKxfpMEWv_3ekiHFGkc4d7kPmfxVKnsuFarIfJufGcM/edit?usp=sharing) with the new names if you wanted to see what's changed (WIP)
 
 -----
-<br><br>
-<br><br>
 <br><br>
 <br><br>
 Credits:
