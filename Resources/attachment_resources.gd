@@ -3,7 +3,8 @@ extends Resource
 var list := [
     {
         "path": "res://Items/Attachments/ACOG/ACOG.tres",
-        "rename": "ACOG 4x"
+        "rename": "Trijicon ACOG 4x",
+        "rename_rotated": "Trijicon\nACOG 4x"
     },
     {
         "path": "res://Items/Attachments/ANPEQ/ANPEQ.tres",
@@ -18,7 +19,7 @@ var list := [
         "path": "res://Items/Attachments/HMR/HMR.tres",
         "rename": "Leupold HAMR",
         "rename_hover": "Leupold Mark 4 HAMR",
-        "rename_rotated": "HAMR"
+        "rename_rotated": "Leupold\nHAMR"
     },
     {
         "path": "res://Items/Attachments/Hybrid/Hybrid.tres",
@@ -31,7 +32,7 @@ var list := [
     {
         "path": "res://Items/Attachments/Leopard/Leopard.tres",
         "rename": "Leupold Mark 8 CQBSS",
-        "rename_rotated": "Leupold"
+        "rename_rotated": "Leupold\nMark 8\nCQBSS"
     },
     {
         "path": "res://Items/Attachments/Micro/Micro.tres",
@@ -52,11 +53,11 @@ var list := [
     },
     {
         "path": "res://Items/Attachments/OZ5/OZ5.tres",
-        "rename": "OZ5"
+        "rename": "Ozark"
     },
     {
         "path": "res://Items/Attachments/PBS/PBS.tres",
-        "rename": "PBS"
+        "rename": "PBS-1"
     },
     {
         "path": "res://Items/Attachments/POSP/POSP.tres",
@@ -68,7 +69,7 @@ var list := [
     },
     {
         "path": "res://Items/Attachments/PTN/PTN.tres",
-        "rename": "PTN"
+        "rename": "Putnik"
     },
     {
         "path": "res://Items/Attachments/PU/PU.tres",
@@ -103,6 +104,6 @@ var list := [
     {
         "path": "res://Items/Attachments/Vudu/Vudu.tres",
         "rename": "Eotech Vudu",
-        "rename_rotated": "Vudu"
+        "rename_rotated": "Eotech\nVudu"
     }
 ]
